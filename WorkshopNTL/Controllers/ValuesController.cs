@@ -10,11 +10,17 @@ namespace WorkshopNTL.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        // GET api/values
+        // GET api/products
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<IEnumerable<Product>> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new Product[] {
+                new Product(1, "Product 1", 1.000),
+                new Product(2, "Product 2", 2.000),
+                new Product(3, "Product 3", 3.000),
+                new Product(4, "Product 4", 4.000),
+                new Product(5, "Product 5", 5.000),
+            };
         }
 
         // GET api/values/5
@@ -22,24 +28,6 @@ namespace WorkshopNTL.Controllers
         public ActionResult<string> Get(int id)
         {
             return "value";
-        }
-
-        // POST api/values
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
         }
 
         public bool check()
