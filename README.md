@@ -43,3 +43,5 @@ docker-compose up -d'''
    }
 }
 ```
+
+![Process](https://raw.githubusercontent.com/up1/workshop-testing/master/process.png)
