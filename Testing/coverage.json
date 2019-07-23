@@ -1,0 +1,132 @@
+{
+  "WorkshopNTL.dll": {
+    "/Users/somkiat/Projects/WorkshopNTL/WorkshopNTL/Program.cs": {
+      "WorkshopNTL.Program": {
+        "System.Void WorkshopNTL.Program::Main(System.String[])": {
+          "Lines": {
+            "16": 0,
+            "17": 0,
+            "18": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.AspNetCore.Hosting.IWebHostBuilder WorkshopNTL.Program::CreateWebHostBuilder(System.String[])": {
+          "Lines": {
+            "21": 0,
+            "22": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/Users/somkiat/Projects/WorkshopNTL/WorkshopNTL/Startup.cs": {
+      "WorkshopNTL.Startup": {
+        "Microsoft.Extensions.Configuration.IConfiguration WorkshopNTL.Startup::get_Configuration()": {
+          "Lines": {
+            "23": 0
+          },
+          "Branches": []
+        },
+        "System.Void WorkshopNTL.Startup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
+          "Lines": {
+            "27": 0,
+            "28": 0,
+            "29": 0
+          },
+          "Branches": []
+        },
+        "System.Void WorkshopNTL.Startup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)": {
+          "Lines": {
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0
+          },
+          "Branches": [
+            {
+              "Line": 34,
+              "Offset": 9,
+              "EndOffset": 11,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 34,
+              "Offset": 9,
+              "EndOffset": 22,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void WorkshopNTL.Startup::.ctor(Microsoft.Extensions.Configuration.IConfiguration)": {
+          "Lines": {
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/Users/somkiat/Projects/WorkshopNTL/WorkshopNTL/Controllers/ValuesController.cs": {
+      "WorkshopNTL.Controllers.ValuesController": {
+        "Microsoft.AspNetCore.Mvc.ActionResult`1<System.Collections.Generic.IEnumerable`1<System.String>> WorkshopNTL.Controllers.ValuesController::Get()": {
+          "Lines": {
+            "16": 0,
+            "17": 0,
+            "18": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.AspNetCore.Mvc.ActionResult`1<System.String> WorkshopNTL.Controllers.ValuesController::Get(System.Int32)": {
+          "Lines": {
+            "23": 0,
+            "24": 0,
+            "25": 0
+          },
+          "Branches": []
+        },
+        "System.Void WorkshopNTL.Controllers.ValuesController::Post(System.String)": {
+          "Lines": {
+            "30": 0,
+            "31": 0
+          },
+          "Branches": []
+        },
+        "System.Void WorkshopNTL.Controllers.ValuesController::Put(System.Int32,System.String)": {
+          "Lines": {
+            "36": 0,
+            "37": 0
+          },
+          "Branches": []
+        },
+        "System.Void WorkshopNTL.Controllers.ValuesController::Delete(System.Int32)": {
+          "Lines": {
+            "42": 0,
+            "43": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean WorkshopNTL.Controllers.ValuesController::check()": {
+          "Lines": {
+            "46": 1,
+            "47": 1,
+            "48": 1
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
