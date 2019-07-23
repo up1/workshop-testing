@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "5811f21c-b5ca-4cd7-bcec-659a80d9c218",
+		"name": "product",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9000/api/values",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "53f9dcaa-d935-41af-bf80-230763dee2ea",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Size = 2\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.length).to.eql(2);",
+							"});",
+							"",
+							"pm.test(\"Product 1\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData[0].name).to.eql(\"CTP20\");",
+							"    pm.expect(jsonData[0].price).to.eql(\"150.00\");",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/values",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"values"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
