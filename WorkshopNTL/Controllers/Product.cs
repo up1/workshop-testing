@@ -3,6 +3,7 @@ namespace WorkshopNTL.Controllers
 {
     public class Product
     {
+        public Product() { }
         public Product(int v1, string v2, double v3)
         {
             this.Id = v1;

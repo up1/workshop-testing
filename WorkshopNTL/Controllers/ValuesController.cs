@@ -10,17 +10,33 @@ namespace WorkshopNTL.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        // GET api/products
-        [HttpGet]
-        public ActionResult<IEnumerable<Product>> Get()
+
+        private readonly ProductContext _context;
+
+        public ValuesController(ProductContext context)
         {
-            return new Product[] {
-                new Product(1, "Product 1", 1.000),
-                new Product(2, "Product 2", 2.000),
-                new Product(3, "Product 3", 3.000),
-                new Product(4, "Product 4", 4.000),
-                new Product(5, "Product 5", 5.000),
-            };
+            this._context = context;
+        }
+
+        // GET api/products
+        //[HttpGet]
+        //public ActionResult<IEnumerable<Product>> Get()
+        //{
+        //    return new Product[] {
+        //        new Product(1, "Product 1", 1.000),
+        //        new Product(2, "Product 2", 2.000),
+        //        new Product(3, "Product 3", 3.000),
+        //        new Product(4, "Product 4", 4.000),
+        //        new Product(5, "Product 5", 5.000),
+        //    };
+        //}
+
+        // GET api/products/db
+        [HttpGet]
+        public ActionResult<IEnumerable<Product>> GetAllFromDB()
+        {
+            var products = _context.Products.ToList();
+            return products;
         }
 
         // GET api/values/5
