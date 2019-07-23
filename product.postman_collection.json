@@ -25,7 +25,7 @@
 							"pm.test(\"Product 1\", function () {",
 							"    var jsonData = pm.response.json();",
 							"    pm.expect(jsonData[0].name).to.eql(\"CTP20\");",
-							"    pm.expect(jsonData[0].price).to.eql(\"150.00\");",
+							"    pm.expect(jsonData[0].price).to.eql(150);",
 							"});",
 							""
 						],
