@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "5811f21c-b5ca-4cd7-bcec-659a80d9c218",
+		"_postman_id": "7fd549d8-1425-41f4-997f-36ba777209b7",
 		"name": "product",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -11,23 +11,22 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "53f9dcaa-d935-41af-bf80-230763dee2ea",
+						"id": "ddd02e03-1f5d-488b-a4be-0bcc455142f1",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {",
 							"    pm.response.to.have.status(200);",
 							"});",
 							"",
-							"pm.test(\"Size = 2\", function () {",
+							"pm.test(\"Your test name\", function () {",
 							"    var jsonData = pm.response.json();",
 							"    pm.expect(jsonData.length).to.eql(2);",
 							"});",
 							"",
-							"pm.test(\"Product 1\", function () {",
+							"pm.test(\"Data\", function () {",
 							"    var jsonData = pm.response.json();",
-							"    pm.expect(jsonData[0].name).to.eql(\"CTP20\");",
-							"    pm.expect(jsonData[0].price).to.eql(150);",
-							"});",
-							""
+							"    pm.expect(jsonData[1].name).to.eql(\"CTP30\");",
+							"    pm.expect(jsonData[1].price).to.eql(270);",
+							"});"
 						],
 						"type": "text/javascript"
 					}
