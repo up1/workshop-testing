@@ -1,6 +1,11 @@
 # Workshop Testing
 
-Step to run
+Step to run with Docker command
+```
+$docker image build -t demo-net:1.0 .
+```
+
+Step to run with Docker compose
 ```
 $docker-compose up
 ```
