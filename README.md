@@ -1,4 +1,4 @@
-# workshop-testing
+# Workshop Testing
 
 Step to run
 ```
